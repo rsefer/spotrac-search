@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spotrac Search</title>
+</head>
+<body>
+
+<form name="f" id="search-form" action="https://www.spotrac.com/redirect/search/" method="POST">
+	<input id="search" type="text" name="search" placeholder="Search a Player or Team" value="">
+	<button type="submit">Search</button>
+</form>
+
+<script>
+var urlParams = new URLSearchParams(window.location.search);
+document.getElementById("search").value = urlParams.get('search');
+f.submit();
+</script>
+
+</body>
+</html>
